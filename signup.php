@@ -1,10 +1,10 @@
 <?php include 'header_main.php'; ?>
-	<title>BLOG | Sign Up</title>
+	<title>MINSU | Sign Up</title>
 </head>
 <body class="h-100">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index_main.php">BLOG</a>
+      <a class="navbar-brand" href="index_main.php">Mindoro State University</a>
       <!-- Navbar-->
       <ul class="navbar-nav ms-auto mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
@@ -52,7 +52,7 @@
               $_SESSION['username'] = $result['Username'];
               $_SESSION['usertype'] = $result['UserType'];
                   
-              header('Location:'.BASEURL.'/index.php');
+              header('Location:'.BASEURL.'/login.php');
             }
             if($stmt->rowCount() > 0) { ?>
                 <div class="alert alert-success" role="alert">Saved Successfully</div>
